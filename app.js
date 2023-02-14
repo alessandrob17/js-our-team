@@ -31,3 +31,15 @@ let teamMembers = [
     };
   ];
   
+   
+  for (let i = 0; i < teamMembers.length; i++) {
+    const soggettoCorrente = teamMembers[i]
+
+    const nome = soggettoCorrente.name
+    const role = soggettoCorrente.role
+    const photo = soggettoCorrente.photo
+
+    console.log(${nome} +  ${role} + ${phoyo})
+  }
+
+
