@@ -28,7 +28,7 @@ let teamMembers = [
       name: "Barbara Ramos",
       role: "Graphic Designer",
       photo: "barbara-ramos-graphic-designer.jpg"
-    };
+    }
   ];
   
    
@@ -39,8 +39,19 @@ let teamMembers = [
     const role = soggettoCorrente.role
     const photo = soggettoCorrente.photo
 
-    console.log(`Nome ${nome} Impiego ${role} ${photo}`)
+    console.log(`Nome: ${nome} Impiego: ${role} pfp: ${photo}`)
   }
+
+  const container = document.getElementById("container");
+  for (const soggettoCorrente of teamMembers) {
+  const memberDiv = document.createElement("div");
+  memberDiv.innerHTML = `
+    <h2>${soggettoCorrente.name}</h2>
+    <p>Ruolo: ${soggettoCorrente.role}</p>
+    <img src="${soggettoCorrente.photo}" alt="${soggettoCorrente.name}">
+  `;
+  container.appendChild(memberDiv);
+}
 
 
   
