@@ -1,4 +1,4 @@
-const team = [
+let teamMembers = [
     {
       name: "Wayne Barnett",
       role: "Founder & CEO",
