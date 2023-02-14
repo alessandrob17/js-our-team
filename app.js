@@ -39,7 +39,8 @@ let teamMembers = [
     const role = soggettoCorrente.role
     const photo = soggettoCorrente.photo
 
-    console.log(${nome} +  ${role} + ${phoyo})
+    console.log(`Nome ${nome} Impiego ${role} ${photo}`)
   }
 
 
+  
